@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Minion</title>
+  <style>
+    body {
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .minion {
+      position: relative;
+      width: 200px;
+      height: 300px;
+      background: #fddb00;
+      border-radius: 100px;
+      box-shadow: inset 0 0 0 8px #000;
+    }
+
+    /* Gözlük bandı */
+    .goggle-band {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      background: #333;
+      z-index: 0;
+    }
+
+    /* Gözlük */
+    .eye {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-110%);
+      width: 60px;
+      height: 60px;
+      background: white;
+      border-radius: 50%;
+      border: 10px solid #888;
+      z-index: 1;
+    }
+
+     .eye2 {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(10%);
+      width: 60px;
+      height: 60px;
+      background: white;
+      border-radius: 50%;
+      border: 10px solid #888;
+      z-index: 1;
+    }
+
+
+
+    .eyeball {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 30px;
+      height: 30px;
+      background: brown;
+      border-radius: 50%;
+    }
+
+    .eyeball::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      width: 14px;
+      height: 14px;
+      background: black;
+      border-radius: 50%;
+    }
+
+
+    
+
+    /* Tulum */
+    .overalls {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 120px;
+      background: #1f4e79;
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+    }
+
+    .pocket {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 40px;
+      background: #163a5f;
+      border-radius: 10px;
+    }
+
+    /* Ağız */
+    .mouth {
+      position: absolute;
+      bottom: 130px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 20px;
+      background: #b33;
+      border-radius: 0 0 60px 60px;
+      
+    }
+
+    .taste{
+    position: absolute;
+        background-color: white;
+        height: 10px;
+        width: 8px;
+        border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+        left:10px
+    }
+
+    .taste:nth-child(2) {
+ left:25px;
+}
+
+.taste:nth-child(3) {
+  left: 40px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="minion">
+    <div class="goggle-band"></div>
+    <div class="eye">
+      <div class="eyeball"></div>
+    </div>
+    <div class="eye2">
+      <div class="eyeball"></div>
+    </div>
+    <div class="mouth">
+        <div class="taste">
+
+        </div>
+        <div class="taste">
+
+        </div>
+        <div class="taste">
+
+        </div>
+    </div>
+    <div class="overalls">
+      <div class="pocket"></div>
+    </div>
+  </div>
+</body>
+</html>
